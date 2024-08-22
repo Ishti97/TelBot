@@ -73,7 +73,8 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
         "metadata": metadata
     })
 
-@app.route(f'/{TELEGRAM_BOT_TOKEN}', methods=['POST'])
+@app.route(f'https://api.telegram.org/bot6916139020:AAGtReUc6tIIa-Pkb8m0qWbcO5fFapFVQVQ/setWebhook?url=https://telbot-z0g7.onrender.com/6916139020:AAGtReUc6tIIa-Pkb8m0qWbcO5fFapFVQVQ
+/{TELEGRAM_BOT_TOKEN}', methods=['POST'])
 def webhook():
     try:
         update = Update.de_json(request.get_json(), application.bot)

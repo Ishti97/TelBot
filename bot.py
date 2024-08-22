@@ -94,3 +94,4 @@ async def main() -> None:
 # Entry point for the script
 if __name__ == '__main__':
     asyncio.run(main())
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
